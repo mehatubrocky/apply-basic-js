@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onclick="alert('i love JS')">Exploring Events</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ratione, nobis itaque similique dolore aut architecto ipsa, placeat accusantium nostrum nulla pariatur numquam consequatur impedit corporis! Explicabo voluptates necessitatibus sequi
+        deserunt ratione doloremque consequatur placeat odio quas quod! Iusto, reprehenderit!</p>
+    <p>Quia, eaque ea quaerat, provident dicta sequi qui iusto voluptatem architecto nihil aperiam placeat. Sunt ratione et, beatae eaque totam cupiditate maxime, natus voluptatum at pariatur illum animi necessitatibus nesciunt architecto ut facilis dolorum?
+        Laborum quam id dicta quibusdam consequatur!</p>
+    <p>Sapiente corporis, sint ducimus nemo recusandae in quisquam culpa sequi corrupti minima nam exercitationem officia molestiae at enim ea praesentium distinctio ipsum debitis alias cum quas. Magni dignissimos veritatis iusto. Maiores nam accusamus velit,
+        cum perspiciatis unde provident atque vero.</p>
+    <button onmousemove=handleClick()>click me</button>
+    <button>click me 1</button>
+    <button id="second">click me 2</button>
+    <button id="last">click me 3</button>
+    <script>
+        function handleClick2() {
+            document.body.style.color = 'tomato';
+        }
+
+        function handleClick() {
+            document.body.style.backgroundColor = 'cyan';
+        }
+        const secondButton = document.getElementById('second');
+        secondButton.onclick = handleClick;
+        
+        const lastButton = document.getElementById('last');
+        lastButton.addEventListener('click', handleClick2);
+    </script>
+</body>
+
+</html>

@@ -1,13 +1,13 @@
 function factorial(num) {
-    var factorial = 1;
+    var fact = 1;
     var i = 1;
-    while (i <= 10) {
-        factorial = factorial * i;
+    while (i <= num) {
+        fact = fact * i;
         i++;
 
 
     }
-    return factorial;
+    return fact;
 }
 var result = factorial(10);
 console.log(result);
